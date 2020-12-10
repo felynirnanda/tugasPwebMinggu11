@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="teks">Ini Teks</h1>
+    <button onclick="gantiTeks()">Ganti Teks</button>
+    <button id="ubahWarna">Ganti Warna</button>
+    <script >
+        const teks = document.getElementById("teks");
+        function gantiTeks() {
+            teks.innerText = "apel";
+            // console.log("masuk")
+        }
+
+        const btn_ubah_warna = document.querySelector("#ubahWarna");
+        btn_ubah_warna.addEventListener("click", function() {
+            teks.style.backgroundColor = "blue";
+        });
+    </script>
+</body>
+</html>
